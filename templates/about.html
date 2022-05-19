@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    .header {
+      padding: 10px;
+      text-align: center;
+      background: blue;
+      color: white;
+    }
+    .navbar {
+      overflow: hidden;
+      background-color: dimgrey;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 10px 10px;
+    }
+    .navbar a.right {
+      float: right;
+    }
+    .navbar a:hover {
+      background-color: #eee;
+      color: black;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .sidebar {
+      flex: 10%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    .main {
+      flex: 80%;
+      background-color: white;
+      padding: 20px;
+    }
+    .logoimg {
+      height: 10%;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+    <h1>OUTCOMES-BASED EDUCATION POLITEKNIK KUCHING SARAWAK</h1>
+  </div>
+  <div class="navbar">
+    <a href="{% url 'home' %}"
+      >Laman Utama</a
+    >
+    <a href="{% url 'about' %}"
+      >Skop & Tanggungjawab</a
+    >
+    <a
+      href="{% url 'activity' %}"
+      >Senarai Aktiviti</a
+    >
+    <a
+      href="{% url 'forms' %}"
+      >Laporan Aktiviti</a
+    >
+    <a href="http://www.poliku.edu.my" class="right">Laman Web PKS</a>
+  </div>
+<br/><br/>
+<div class="main">
+<h4 align="center">SKOP DAN TUGAS PORTFOLIO DI BAWAH JAWATANKUASA OBE PKS</h4>
+<BR>
+<h5>SKOP TUGAS OBE PKS</h5>
+<p>KPI bagi Jawatankuasa OBE di peringkat PKS adalah:</p>
+<p>1.	Bertanggungjawab kepada Ketua Unit Jaminan Kualiti dan Timbalan Pengarah Akademik</p>
+<p>2.	Menyelaras aktiviti berkaitan OBE di peringkat jabatan.</p>
+<p>3.	Merancang dan melaksanakan aktiviti OBE di peringkat PKS.</p>
+<p>4.	Memantau pelaksanaan aktiviti OBE di peringkat jabatan mengikut KPI yang telah ditetapkan.</p>
+<p>5.	Merekodkan senarai aktiviti OBE jabatan.</p>
+<p>6.	Mengumpul laporan ringkas aktiviti OBE jabatan dua kali setahun.</p>
+<p>7.	Melaksanakan tugas-tugas lain yang diarahkan oleh pegawai atasan dari masa ke semasa.</p>
+<br>
+<h5>SKOP TUGAS CQI PKS</h5>
+<p>KPI bagi Jawatankuasa OBE di peringkat PKS adalah:</p>
+<p>1.	Bertanggungjawab kepada Ketua Unit Jaminan Kualiti dan Timbalan Pengarah Akademik</p>
+<p>2.	Menyelaras aktiviti berkaitan CQI di peringkat jabatan.</p>
+<p>3.	Merancang dan melaksanakan aktivti CQI di peringkat PKS.</p>
+<p>4.	Memantau pelaksanaan aktiviti CQI di peringkat jabatan mengikut KPI yang telah ditetapkan.</p>
+<p>5.	Menyelaras format laporan CQI yang digunapakai.</p>
+<p>6.	Melaksanakan tugas-tugas lain yang diarahkan oleh pegawai atasan dari masa ke semasa.</p>
+
+<br>
+<h5>KPI JAWAKANKUASA OBE JABATAN</h5>
+<div class="container">
+    <div class="row">
+        <div class="col-left">
+            <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                                          <th>KPI</th>
+                    <th>Petunjuk Prestasi</th>
+                    <th>Sasaran Kerja</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                                          <td>KPI 1</td>
+                     <td>Mengadakan taklimat OBE kepada pelajar baharu & pensyarah kursus mengikut keperluan manual ETAC dan Garis Panduan Amalan Baik MQA</td>
+                     <td>2</td>
+                  </tr>
+                  <tr>
+                                          <td>KPI 2</td>
+                     <td>Mengadakan taklimat dan memastikan pensyarah kursus memahami rekabentuk kurikulum yang digunakan.</td>
+                     <td>2</td>
+                  </tr>
+                  <tr>
+                                          <td>KPI 3</td>
+                     <td>Mengadakan taklimat  merancang penilaian dengan menggunakan CIST mengikut keperluan kurikulum</td>
+                     <td>2</td>
+                  </tr>
+                  <tr>
+                                          <td>KPI 4</td>
+                     <td>Mengadakan taklimat  membaca laporan CORR dan penghasilan CQI</td>
+                     <td>2</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+        </div>
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>

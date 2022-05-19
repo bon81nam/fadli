@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form OBE</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<a href="{% url 'home' %}"
+      >HOME</a>
+<br/><br/>
+<center>
+<div class="container">
+    <div class="row">
+        <center>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    user LOGIN
+                </div>
+                <br/>
+                <div class="card-body">
+
+                    <form method="post">
+                        {% csrf_token %}
+
+                        {{ form.as_p }}
+                        <br/>
+                        <button class="btn btn-secondary">MASUK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+            </center>
+    </div>
+</div>
+</center>
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>

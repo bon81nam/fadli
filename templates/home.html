@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WELCOME TO OBE PKS</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    .header {
+      padding: 10px;
+      text-align: center;
+      background: blue;
+      color: white;
+    }
+    .navbar {
+      overflow: hidden;
+      background-color: dimgrey;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 10px 10px;
+    }
+    .navbar a.right {
+      float: right;
+    }
+    .navbar a:hover {
+      background-color: #eee;
+      color: black;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .sidebar {
+      flex: 10%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    .main {
+      flex: 80%;
+      background-color: white;
+      padding: 20px;
+    }
+    .logoimg {
+      height: 10%;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>OUTCOMES-BASED EDUCATION POLITEKNIK KUCHING SARAWAK</h1>
+  </div>
+  <div class="navbar">
+    <a href="{% url 'home' %}"
+      >Laman Utama</a
+    >
+    <a href="{% url 'about' %}"
+      >Skop & Tanggungjawab</a
+    >
+    <a
+      href="{% url 'activity' %}"
+      >Senarai Aktiviti</a
+    >
+    <a
+      href="{% url 'forms' %}"
+      >Laporan Aktiviti</a
+    >
+    <a href="http://www.poliku.edu.my" class="right">Laman Web PKS</a>
+  </div>
+  <div class="container">
+<br/>
+      <center>
+      <h4>CARTA ORGANISASI UNIT JAMINAN KUALITI</h4>
+      </center>
+      <div>
+      <center>
+   <!--     <img src="static/images/DSGN-Carta-Organisasi-Unit-Kualiti-A3.jpg" width="800" style="height: 500px"/> -->
+          <img src="{% static 'images/DSGN-Carta-Organisasi-Unit-Kualiti-A3.jpg' %}" width="800" style="height: 500px"/>
+      </center>
+      </div>
+      <br>
+      <center>
+      <h4>CARTA ORGANISASI OBE PKS</h4>
+      </center>
+      <div>
+        <center>
+                <img src="{% static 'images/JKOBE.png' %}" width="800" style="height: 500px"/>
+        </center>
+      </div>
+<br>
+    <div class="main">
+      <h3>JAWATANKUASA OBE PKS</h3>
+      <p>
+        Jawatankuasa OBE (Outcomes-Based Education) PKS diwujudkan selari dengan kehendak sistem pendidikan yang berasakan hasil yang merangkumi aspek pengetahuan (Cognitive), kemahiran (Psychomotor) dan nilai (Affective).
+          Hasil pembelajran adalah apa yang ditunjukkan oleh pelajar tentang pengetahuan dan kebolehan membuat sesuatu selepas sesuatu perkara diajar.
+      </p>
+      <br />
+      <div class="row">
+        <div class="sidebar">
+          <h3><u>Link-link Fail Berkaitan</u></h3>
+          <a href="{% static 'files/BORCQI.xlsx' %}"
+            >Borang CQI - Format Excel</a
+          ><br />
+          <a href="{% url 'PEO' %}"
+            >Kajian PEO (Program Education Outcomes) </a
+          ><br />
+           </div>
+      </div>
+    </div>
+  </div>
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
